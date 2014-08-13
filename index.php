@@ -8,22 +8,24 @@
     <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <!--[if IE]>
-        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
 </head>
 <body>
-  <header class="header">
-    <h1>Site Name</h1>
-    <div>This image is a logo placeholder:</div>
-    <img src="http://lorempixel.com/200/100" />
-    <nav role="navigation" class="nav">
-      <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </nav>
+  <header class="header-wrapper">
+    <div class="header-content">
+      <h1>Site Name</h1>
+      <div>This image is a logo placeholder:</div>
+      <img src="http://lorempixel.com/200/100" />
+      <nav role="navigation" class="nav">
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <section class="body">
     <section id="about">
