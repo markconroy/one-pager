@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Simple PHP Contact Form</title>
+    <title>Simple One Page Website</title>
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
@@ -16,6 +16,7 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
     </nav>
   </header>
@@ -40,7 +41,7 @@
       <img src="http://lorempixel.com/400/300" />
       <img src="http://lorempixel.com/400/300" />
     </section>
-    <section id="contact_form">
+    <section id="contact">
     <form name="contact-form" id="contact" method="post" action="contact.php">
     <h2>Send your request now</h2>
     <p>You're a person who knows what you want. Let us know your thoughts by filling out this short form and we'll get back to you asap. We promise.<br>
