@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Simple PHP Contact Form</title>
+    <title>Simple One Page Website</title>
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
