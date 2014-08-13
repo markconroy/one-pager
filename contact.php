@@ -5,11 +5,10 @@
   $phone=$_POST['phone'];
   $email=$_POST['email'];
   $message=$_POST['message'];
-
+  // What gets sent, in what manner, in the email.
   $to = "info@adesignforlife.net";
   $subject = "From Contact Form";
   $body = " Name: " . $name . "\r\n Location: " . $location . "\r\n Phone: " . $phone . "\r\n Email: " . $email . "\r\n Message: \r\n " . $message;
-
 
   $from = "$name";
   $headers = "From:" . $from . "\r\n";
