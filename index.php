@@ -59,6 +59,15 @@
     </section>
   </section>
   <footer class="footer">
+    <section class="1">
+      <h2>Footer Section 1</h2>
+    </section>
+    <section class="2">
+      <h2>Footer Section 2</h2>
+    </section>
+        <section>
+      <h2>Footer Section 3</h2>
+    <section class="3">
   </footer>
 </body>
 </html>
