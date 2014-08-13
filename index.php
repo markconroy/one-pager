@@ -5,10 +5,15 @@
     <title>Simple One Page Website</title>
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
 </head>
 <body>
   <header class="header">
+    <h1>Site Name</h1>
     <div>This image is a logo placeholder:</div>
     <img src="http://lorempixel.com/200/100" />
     <nav role="navigation" class="nav">
