@@ -9,6 +9,7 @@
 </head>
 <body>
   <header class="header">
+    <div>This image is a logo placeholder:</div>
     <img src="http://lorempixel.com/200/100" />
     <nav role="navigation" class="nav">
       <ul>
