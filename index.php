@@ -68,15 +68,15 @@
     </section>
   </section>
   <footer class="footer">
-    <section class="1">
+    <section class="footer 1">
       <h2>Footer Section 1</h2>
     </section>
-    <section class="2">
+    <section class="footer 2">
       <h2>Footer Section 2</h2>
     </section>
-        <section>
+    <section class="footer 3">
       <h2>Footer Section 3</h2>
-    <section class="3">
+    </section>
   </footer>
 </body>
 </html>
