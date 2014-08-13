@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
-
 <body>
   <header class="header">
     <img src="http://lorempixel.com/200/100" />
@@ -61,7 +60,5 @@
   </section>
   <footer class="footer">
   </footer>
-
-
 </body>
 </html>
