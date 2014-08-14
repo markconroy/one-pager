@@ -27,56 +27,60 @@
       </nav>
     </div>
   </header>
-  <section class="body">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Talkin' about a revolution</p>
-    </section>
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <p>You wanna see my piece(s of work), yo?</p>
-      <img src="http://lorempixel.com/400/300" />
-      <img src="http://lorempixel.com/400/300" />
-      <img src="http://lorempixel.com/400/300" />
-      <img src="http://lorempixel.com/400/300" />
-      <img src="http://lorempixel.com/400/300" />
-      <img src="http://lorempixel.com/400/300" />
-      <img src="http://lorempixel.com/400/300" />
-      <img src="http://lorempixel.com/400/300" />
-      <img src="http://lorempixel.com/400/300" />
-      <img src="http://lorempixel.com/400/300" />
-      <img src="http://lorempixel.com/400/300" />
-      <img src="http://lorempixel.com/400/300" />
-    </section>
-    <section id="contact">
-    <form name="contact-form" id="contact" method="post" action="contact.php">
-    <h2>Send your request now</h2>
-    <p>You're a person who knows what you want. Let us know your thoughts by filling out this short form and we'll get back to you asap. We promise.<br>
-      A * means your must fill in that field.</p>
-      <label>Name*:</label>
-        <input type="text" placeholder="What is your name?" name="name" id="name" required>
-      <label>Location*:</label>
-        <input type="text" placeholder="What's your general location?" name="location" id="location" required>
-      <label>Phone:</label>
-        <input type="tel" placeholder="What is your phone number?" name="phone" id="phone">
-      <label>Email*:</label>
-        <input type="email" placeholder="youremail@email.com" name="email" id="email" required>
-      <label>Message*</label>
-        <textarea type="text" placeholder="So, what do you want to tell us?" name="message" id="message" required></textarea>
-        <input class="submit" type="submit" name="Submit" value="Send">
-    </form>
-    </section>
+  <section class="header-wrapper">
+    <div class="header-content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Talkin' about a revolution</p>
+      </section>
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>You wanna see my piece(s of work), yo?</p>
+        <img src="http://lorempixel.com/400/300" />
+        <img src="http://lorempixel.com/400/300" />
+        <img src="http://lorempixel.com/400/300" />
+        <img src="http://lorempixel.com/400/300" />
+        <img src="http://lorempixel.com/400/300" />
+        <img src="http://lorempixel.com/400/300" />
+        <img src="http://lorempixel.com/400/300" />
+        <img src="http://lorempixel.com/400/300" />
+        <img src="http://lorempixel.com/400/300" />
+        <img src="http://lorempixel.com/400/300" />
+        <img src="http://lorempixel.com/400/300" />
+        <img src="http://lorempixel.com/400/300" />
+      </section>
+      <section id="contact">
+      <form name="contact-form" id="contact" method="post" action="contact.php">
+      <h2>Send your request now</h2>
+      <p>You're a person who knows what you want. Let us know your thoughts by filling out this short form and we'll get back to you asap. We promise.<br>
+        A * means your must fill in that field.</p>
+        <label>Name*:</label>
+          <input type="text" placeholder="What is your name?" name="name" id="name" required>
+        <label>Location*:</label>
+          <input type="text" placeholder="What's your general location?" name="location" id="location" required>
+        <label>Phone:</label>
+          <input type="tel" placeholder="What is your phone number?" name="phone" id="phone">
+        <label>Email*:</label>
+          <input type="email" placeholder="youremail@email.com" name="email" id="email" required>
+        <label>Message*</label>
+          <textarea type="text" placeholder="So, what do you want to tell us?" name="message" id="message" required></textarea>
+          <input class="submit" type="submit" name="Submit" value="Send">
+      </form>
+      </section>
+    </div>
   </section>
-  <footer class="footer">
-    <section class="footer 1">
-      <h2>Footer Section 1</h2>
-    </section>
-    <section class="footer 2">
-      <h2>Footer Section 2</h2>
-    </section>
-    <section class="footer 3">
-      <h2>Footer Section 3</h2>
-    </section>
+  <footer class="header-wrapper">
+    <div class="header-content">
+      <section class="footer 1">
+        <h2>Footer Section 1</h2>
+      </section>
+      <section class="footer 2">
+        <h2>Footer Section 2</h2>
+      </section>
+      <section class="footer 3">
+        <h2>Footer Section 3</h2>
+      </section>
+    </div>
   </footer>
 </body>
 </html>
