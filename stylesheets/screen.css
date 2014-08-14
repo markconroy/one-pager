@@ -446,3 +446,44 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/**
+ * @file
+ * All the mixins we are using in our styling are listed here.
+ */
+/**
+ * @file
+ * All the variables we are using in our styling are listed here.
+ */
+/**
+ * @file
+ * All the extends/pseudo-classes we are using in our styling are listed here.
+ */
+/**
+ * @file
+ * All the variables we are using in our styling are listed here.
+ */
+/**
+ * @file
+ * This is the styling for header items.
+ */
+/* line 6, ../sass/sections/_header.scss */
+.header-wrapper {
+  background: yellow;
+}
+
+/* line 10, ../sass/sections/_header.scss */
+.header-content {
+  width: 940px;
+  margin: auto;
+  background: red;
+}
+
+/**
+ * @file
+ * This is the styling for body items.
+ */
+/**
+ * @file
+ * This is the styling for footer items.
+ */
