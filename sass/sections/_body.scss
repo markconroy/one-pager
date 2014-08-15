@@ -2,3 +2,12 @@
  * @file
  * This is the styling for body items.
  */
+
+#main {
+  &.outer {
+    background: green;
+  }
+  .inner {
+    background: aqua;
+  }
+}

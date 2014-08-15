@@ -3,3 +3,14 @@
  * This is the styling for footer items.
  */
 
+footer {
+  &.outer {
+    background: pink;
+  }
+  .inner {
+    background: purple;
+  }
+  .footer-block {
+    background: lightgreen;
+  }
+}
