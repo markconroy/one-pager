@@ -12,23 +12,25 @@
     <![endif]-->
 </head>
 <body>
-  <header class="header-wrapper">
-    <div class="header-content">
-      <h1>Site Name</h1>
-      <div>This image is a logo placeholder:</div>
-      <img src="http://lorempixel.com/200/100" />
-      <nav role="navigation" class="nav">
-        <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </nav>
+  <header class="outer">
+    <div class="inner">
+      <div class="header-content">
+        <h1>Site Name</h1>
+        <div>This image is a logo placeholder:</div>
+        <img src="http://lorempixel.com/200/100" />
+        <nav role="navigation" class="nav">
+          <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
-  <section class="header-wrapper">
-    <div class="header-content">
+  <section id="main" class="outer">
+    <div class="inner">
       <section id="about">
         <h2>About Me</h2>
         <p>Talkin' about a revolution</p>
@@ -69,15 +71,15 @@
       </section>
     </div>
   </section>
-  <footer class="header-wrapper">
-    <div class="header-content">
-      <section class="footer 1">
+  <footer class="outer">
+    <div class="inner">
+      <section class="footer-block fb1">
         <h2>Footer Section 1</h2>
       </section>
-      <section class="footer 2">
+      <section class="footer-block fb2">
         <h2>Footer Section 2</h2>
       </section>
-      <section class="footer 3">
+      <section class="footer-block fb3">
         <h2>Footer Section 3</h2>
       </section>
     </div>
