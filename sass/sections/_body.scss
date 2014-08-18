@@ -8,6 +8,19 @@
     background: green;
   }
   .inner {
-    background: aqua;
+    background: purple;
+  }
+  .content {
+    padding: 0 10px;
+  }
+  .center {
+    margin: 0 auto;
+    max-width: 200px;
+  }
+  .label {
+    clear: left;
+    float: left;
+    line-height: 1.5;
+    width: 100px;
   }
 }

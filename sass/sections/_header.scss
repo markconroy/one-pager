@@ -11,3 +11,26 @@ header {
     background: red;
   }
 }
+
+header {
+  #nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        background: pink;
+        box-sizing: border-box;
+        list-style: none;
+        // width: 25%;
+        @include breakpoint($small) {
+          display: inline-block;
+        }
+        a {
+          display: block;
+          padding: 10px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

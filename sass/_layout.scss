@@ -18,21 +18,13 @@ $zen-gutter-width: 20px;
 
 footer {
   .footer-block {
-    &.fb1 {
-      @include zen-grid-item(4,1);
-    }
-    &.fb2 {
-      @include zen-grid-item(4,5);
-    }
-    &.fb3 {
-      box-sizing: border-box;
-      float: left;
-      margin-left: 66%;
-      margin-right: -100%;
-      padding-left: 10px;
-      padding-right: 10px;
-      width: 34%;
-      word-wrap: break-word;
+    @include breakpoint($small) {
+      &.fb1 {
+        @include zen-grid-item(6,1);
+      }
+      &.fb2 {
+        @include zen-grid-item(6,7);
+      }
     }
   }
 }
