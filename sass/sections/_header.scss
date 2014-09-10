@@ -5,10 +5,10 @@
 
 header {
   &.outer {
-    background: gold;
+    background: $col2;
   }
   .inner {
-    background: red;
+    background: $col2;
   }
 }
 
@@ -18,7 +18,7 @@ header {
       margin: 0;
       padding: 0;
       li {
-        background: pink;
+        background: $col1;
         box-sizing: border-box;
         list-style: none;
         // width: 25%;

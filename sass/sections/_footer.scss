@@ -5,15 +5,15 @@
 
 footer {
   &.outer {
-    background: pink;
+    background: $col2;
   }
   .inner {
-    background: purple;
+    background: $col2;
   }
   .content {
     padding: 0 10px;
   }
   .footer-block {
-    background: white;
+    background: $col1;
   }
 }

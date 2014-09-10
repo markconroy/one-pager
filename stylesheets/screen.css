@@ -373,7 +373,6 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background: yellow;
   display: block;
   -webkit-appearance: button;
   /* 2 */
@@ -384,7 +383,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 527, ../sass/_normalize.scss */
+/* line 526, ../sass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -396,7 +395,7 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *  Known issue: excess padding remains in IE 6.
  */
-/* line 539, ../sass/_normalize.scss */
+/* line 538, ../sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -moz-box-sizing: border-box;
@@ -412,7 +411,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *  (include `-moz` to future-proof).
  */
-/* line 555, ../sass/_normalize.scss */
+/* line 554, ../sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -426,7 +425,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 565, ../sass/_normalize.scss */
+/* line 564, ../sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -435,7 +434,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 574, ../sass/_normalize.scss */
+/* line 573, ../sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -446,7 +445,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 585, ../sass/_normalize.scss */
+/* line 584, ../sass/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -460,7 +459,7 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 598, ../sass/_normalize.scss */
+/* line 597, ../sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -527,11 +526,11 @@ table {
  */
 /* line 7, ../sass/sections/_header.scss */
 header.outer {
-  background: gold;
+  background: #555457;
 }
 /* line 10, ../sass/sections/_header.scss */
 header .inner {
-  background: red;
+  background: #555457;
 }
 
 /* line 17, ../sass/sections/_header.scss */
@@ -541,7 +540,7 @@ header #nav ul {
 }
 /* line 20, ../sass/sections/_header.scss */
 header #nav ul li {
-  background: pink;
+  background: #0081c6;
   box-sizing: border-box;
   list-style: none;
 }
@@ -564,11 +563,11 @@ header #nav ul li a {
  */
 /* line 7, ../sass/sections/_body.scss */
 #main.outer {
-  background: green;
+  background: #0081c6;
 }
 /* line 10, ../sass/sections/_body.scss */
 #main .inner {
-  background: purple;
+  background: #0081c6;
 }
 /* line 13, ../sass/sections/_body.scss */
 #main .content {
@@ -593,11 +592,11 @@ header #nav ul li a {
  */
 /* line 7, ../sass/sections/_footer.scss */
 footer.outer {
-  background: pink;
+  background: #555457;
 }
 /* line 10, ../sass/sections/_footer.scss */
 footer .inner {
-  background: purple;
+  background: #555457;
 }
 /* line 13, ../sass/sections/_footer.scss */
 footer .content {
@@ -605,5 +604,5 @@ footer .content {
 }
 /* line 16, ../sass/sections/_footer.scss */
 footer .footer-block {
-  background: white;
+  background: #0081c6;
 }

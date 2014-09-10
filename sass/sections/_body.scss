@@ -5,10 +5,10 @@
 
 #main {
   &.outer {
-    background: green;
+    background: $col1;
   }
   .inner {
-    background: purple;
+    background: $col1;
   }
   .content {
     padding: 0 10px;
