@@ -109,6 +109,8 @@ html {
  */
 
 body {
+  color: $col2;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -121,7 +123,14 @@ body {
  */
 
 a {
+  @extend %transition;
   background: transparent;
+  color: $col1;
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    color: $col3;
+  }
 }
 
 /**
@@ -464,14 +473,24 @@ input,
 select,
 textarea {
   @include border-radius(5px);
-  border: 1px solid;
+  @extend %transition;
+  border: 1px solid $col2;
   font-family: inherit; /* 1 */
   font-size: 100%; /* 2 */
-  margin: 5px; /* 3 */
+  margin: 5px 0; /* 3 */
   padding: 10px;
+  width: 94%;
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     vertical-align: baseline; /* 4 */
     *vertical-align: middle; /* 4 */
+  }
+  &:focus,
+  &:hover {
+    border: 1px solid darken($col2, 20%);
+    color: $col1;
+  }
+  @include breakpoint($medium) {
+    width: 50%;
   }
 }
 
@@ -511,11 +530,21 @@ button,
 html input[type="button"], /* 1 */
 input[type="reset"],
 input[type="submit"] {
+  @include rem(padding, .8rem 1.3rem);
+  background: $white;
+  clear: both;
+  color: $col2;
   display: block;
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
+  width: auto;
   @if $legacy-support-for-ie7 {
     *overflow: visible; /* 4 */
+  }
+  &:focus,
+  &:hover {
+    background: $col3;
+    color: $black;
   }
 }
 

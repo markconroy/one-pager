@@ -10,6 +10,32 @@
  * @file
  * All the extends/pseudo-classes we are using in our styling are listed here.
  */
+/**
+ * Give items a smooth transition
+ */
+/* line 9, ../sass/lib/_extends.scss */
+a, button,
+input,
+select,
+textarea, header #nav ul li, #main img {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
+  /* Safari */
+}
+
+/**
+ * Page wrapper div to give some padding to sections
+ */
+/* line 18, ../sass/lib/_extends.scss */
+header .inner, #main .inner, footer .inner {
+  margin: auto;
+  width: 90%;
+}
+
 /* normalize.scss 2.2.0+normalize.2.1.3 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
 /**
  * @file
@@ -92,6 +118,8 @@ html {
  */
 /* line 111, ../sass/_normalize.scss */
 body {
+  color: #555457;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -101,15 +129,21 @@ body {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 123, ../sass/_normalize.scss */
+/* line 125, ../sass/_normalize.scss */
 a {
   background: transparent;
+  color: #0081c6;
+  text-decoration: none;
+}
+/* line 130, ../sass/_normalize.scss */
+a:focus, a:hover {
+  color: #b1d356;
 }
 
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 131, ../sass/_normalize.scss */
+/* line 140, ../sass/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -117,7 +151,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 139, ../sass/_normalize.scss */
+/* line 148, ../sass/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -130,7 +164,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 169, ../sass/_normalize.scss */
+/* line 178, ../sass/_normalize.scss */
 h1 {
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   font-size: 2em;
@@ -142,7 +176,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 219, ../sass/_normalize.scss */
+/* line 228, ../sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -150,7 +184,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 227, ../sass/_normalize.scss */
+/* line 236, ../sass/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -159,7 +193,7 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 236, ../sass/_normalize.scss */
+/* line 245, ../sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -167,7 +201,7 @@ dfn {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 244, ../sass/_normalize.scss */
+/* line 253, ../sass/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
@@ -178,7 +212,7 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 253, ../sass/_normalize.scss */
+/* line 262, ../sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -187,7 +221,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 262, ../sass/_normalize.scss */
+/* line 271, ../sass/_normalize.scss */
 code,
 kbd,
 pre,
@@ -199,7 +233,7 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 277, ../sass/_normalize.scss */
+/* line 286, ../sass/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
@@ -207,7 +241,7 @@ pre {
 /**
  * Set consistent quote types.
  */
-/* line 292, ../sass/_normalize.scss */
+/* line 301, ../sass/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -215,7 +249,7 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 300, ../sass/_normalize.scss */
+/* line 309, ../sass/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -223,7 +257,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 308, ../sass/_normalize.scss */
+/* line 317, ../sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -232,12 +266,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 316, ../sass/_normalize.scss */
+/* line 325, ../sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 320, ../sass/_normalize.scss */
+/* line 329, ../sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -251,7 +285,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 385, ../sass/_normalize.scss */
+/* line 394, ../sass/_normalize.scss */
 img {
   border: 0;
 }
@@ -259,7 +293,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 397, ../sass/_normalize.scss */
+/* line 406, ../sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -270,7 +304,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 409, ../sass/_normalize.scss */
+/* line 418, ../sass/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -281,7 +315,7 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 431, ../sass/_normalize.scss */
+/* line 440, ../sass/_normalize.scss */
 fieldset {
   margin: 0 2px;
   /* Apply borders and padding that keep the vertical rhythm. */
@@ -305,7 +339,7 @@ fieldset {
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
-/* line 447, ../sass/_normalize.scss */
+/* line 456, ../sass/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -319,7 +353,7 @@ legend {
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  * 4. Improve appearance and consistency with IE 6/7.
  */
-/* line 462, ../sass/_normalize.scss */
+/* line 471, ../sass/_normalize.scss */
 button,
 input,
 select,
@@ -327,21 +361,42 @@ textarea {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid;
+  border: 1px solid #555457;
   font-family: inherit;
   /* 1 */
   font-size: 100%;
   /* 2 */
-  margin: 5px;
+  margin: 5px 0;
   /* 3 */
   padding: 10px;
+  width: 94%;
+}
+/* line 487, ../sass/_normalize.scss */
+button:focus, button:hover,
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover {
+  border: 1px solid #222223;
+  color: #0081c6;
+}
+@media (min-width: 800px) {
+  /* line 471, ../sass/_normalize.scss */
+  button,
+  input,
+  select,
+  textarea {
+    width: 50%;
+  }
 }
 
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 483, ../sass/_normalize.scss */
+/* line 502, ../sass/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -353,7 +408,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 495, ../sass/_normalize.scss */
+/* line 514, ../sass/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -368,22 +423,39 @@ select {
  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
  *  Known issue: inner spacing remains in IE 6.
  */
-/* line 510, ../sass/_normalize.scss */
+/* line 529, ../sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+  padding: 13px 21px;
+  padding: 0.8rem 1.3rem;
+  background: white;
+  clear: both;
+  color: #555457;
   display: block;
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
   /* 3 */
+  width: auto;
+}
+/* line 544, ../sass/_normalize.scss */
+button:focus, button:hover,
+html input[type="button"]:focus,
+html input[type="button"]:hover,
+input[type="reset"]:focus,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+  background: #b1d356;
+  color: black;
 }
 
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 526, ../sass/_normalize.scss */
+/* line 555, ../sass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -395,7 +467,7 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *  Known issue: excess padding remains in IE 6.
  */
-/* line 538, ../sass/_normalize.scss */
+/* line 567, ../sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -moz-box-sizing: border-box;
@@ -411,7 +483,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *  (include `-moz` to future-proof).
  */
-/* line 554, ../sass/_normalize.scss */
+/* line 583, ../sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -425,7 +497,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 564, ../sass/_normalize.scss */
+/* line 593, ../sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -434,7 +506,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 573, ../sass/_normalize.scss */
+/* line 602, ../sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -445,7 +517,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 584, ../sass/_normalize.scss */
+/* line 613, ../sass/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -459,7 +531,7 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 597, ../sass/_normalize.scss */
+/* line 626, ../sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -522,68 +594,144 @@ table {
 
 /**
  * @file
+ * This is the styling for miscellaneous items.
+ */
+/**
+* Common heading attributes
+*/
+/* line 10, ../sass/sections/_misc.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  padding: 16px 16px 12px 16px;
+  padding: 1rem 1rem 0.75rem 1rem;
+  background: #555457;
+  color: #b1d356;
+}
+
+/**
+ * @file
  * This is the styling for header items.
  */
 /* line 7, ../sass/sections/_header.scss */
 header.outer {
-  background: #555457;
+  border-top: 10px solid;
 }
-/* line 10, ../sass/sections/_header.scss */
-header .inner {
-  background: #555457;
+/* line 13, ../sass/sections/_header.scss */
+header .site-name {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+/* line 29, ../sass/lib/_mixins.scss */
+header .site-name:active, header .site-name:focus {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
 }
 
-/* line 17, ../sass/sections/_header.scss */
+@media (min-width: 520px) {
+  /* line 19, ../sass/sections/_header.scss */
+  header .logo {
+    float: left;
+  }
+}
+
+/* line 27, ../sass/sections/_header.scss */
 header #nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 20, ../sass/sections/_header.scss */
+/* line 30, ../sass/sections/_header.scss */
 header #nav ul li {
-  background: #0081c6;
   box-sizing: border-box;
+  display: block;
   list-style: none;
 }
+/* line 35, ../sass/sections/_header.scss */
+header #nav ul li:focus, header #nav ul li:hover {
+  background: #555457;
+}
 @media (min-width: 520px) {
-  /* line 20, ../sass/sections/_header.scss */
+  /* line 30, ../sass/sections/_header.scss */
   header #nav ul li {
     display: inline-block;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
   }
 }
-/* line 28, ../sass/sections/_header.scss */
+@media (min-width: 800px) {
+  /* line 30, ../sass/sections/_header.scss */
+  header #nav ul li {
+    border-bottom: 5px solid #b1d356;
+  }
+  /* line 45, ../sass/sections/_header.scss */
+  header #nav ul li:focus, header #nav ul li:hover {
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0;
+    border-radius: 0 0 10px 10px;
+    border-color: #0081c6;
+  }
+}
+/* line 51, ../sass/sections/_header.scss */
 header #nav ul li a {
+  padding: 16px;
+  padding: 1rem;
   display: block;
-  padding: 10px;
   text-transform: uppercase;
+}
+/* line 55, ../sass/sections/_header.scss */
+header #nav ul li a:focus, header #nav ul li a:hover {
+  color: white;
+}
+@media (min-width: 520px) {
+  /* line 26, ../sass/sections/_header.scss */
+  header #nav {
+    float: left;
+  }
+}
+@media (min-width: 800px) {
+  /* line 26, ../sass/sections/_header.scss */
+  header #nav {
+    float: right;
+  }
 }
 
 /**
  * @file
  * This is the styling for body items.
  */
-/* line 7, ../sass/sections/_body.scss */
-#main.outer {
-  background: #0081c6;
+/* line 11, ../sass/sections/_body.scss */
+#main img {
+  box-sizing: border-box;
+  padding: 15px;
 }
-/* line 10, ../sass/sections/_body.scss */
-#main .inner {
-  background: #0081c6;
+/* line 15, ../sass/sections/_body.scss */
+#main img.portfolio-img {
+  width: 100%;
 }
-/* line 13, ../sass/sections/_body.scss */
-#main .content {
-  padding: 0 10px;
+@media (min-width: 520px) {
+  /* line 15, ../sass/sections/_body.scss */
+  #main img.portfolio-img {
+    width: 49%;
+  }
 }
-/* line 16, ../sass/sections/_body.scss */
-#main .center {
-  margin: 0 auto;
-  max-width: 200px;
-}
-/* line 20, ../sass/sections/_body.scss */
-#main .label {
-  clear: left;
-  float: left;
-  line-height: 1.5;
-  width: 100px;
+@media (min-width: 800px) {
+  /* line 15, ../sass/sections/_body.scss */
+  #main img.portfolio-img {
+    width: 32.5%;
+  }
 }
 
 /**
@@ -592,17 +740,9 @@ header #nav ul li a {
  */
 /* line 7, ../sass/sections/_footer.scss */
 footer.outer {
-  background: #555457;
+  border-bottom: 10px solid;
 }
-/* line 10, ../sass/sections/_footer.scss */
-footer .inner {
-  background: #555457;
-}
-/* line 13, ../sass/sections/_footer.scss */
-footer .content {
-  padding: 0 10px;
-}
-/* line 16, ../sass/sections/_footer.scss */
-footer .footer-block {
-  background: #0081c6;
+/* line 9, ../sass/sections/_footer.scss */
+footer.outer.before {
+  border-bottom: 10px solid #0081c6;
 }

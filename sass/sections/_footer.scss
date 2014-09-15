@@ -5,15 +5,14 @@
 
 footer {
   &.outer {
-    background: $col2;
+    border-bottom: 10px solid;
+    &.before {
+      border-bottom: 10px solid $col1;
+    }
   }
   .inner {
-    background: $col2;
+    @extend %page-wrapper;
   }
-  .content {
-    padding: 0 10px;
-  }
-  .footer-block {
-    background: $col1;
-  }
+  .content {}
+  .footer-block {}
 }

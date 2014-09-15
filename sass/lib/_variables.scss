@@ -36,8 +36,12 @@ $h4-font-size: 1  * $base-font-size !default;
 $h5-font-size: 0.83 * $base-font-size !default;
 $h6-font-size: 0.67 * $base-font-size !default;
 
+// Standard Colours
+$black:     #000;
+$white:     #fff;
 // Custom Colours
 $blue:      #0081c6;
+$bluedark:  #5f7fc0;
 $bluelight: #70cdde;
 $green:     #b1d356;
 $grey:      #555457;
@@ -46,9 +50,11 @@ $col1:  $blue;
 $col2:  $grey;
 $col3:  $green;
 $col4:  $bluelight;
+$col5:  $bluedark;
 
 // The amount lists and blockquotes are indented.
 $indent-amount: 40px !default;
 
 // breakpoints
 $small:  520px;
+$medium: 800px;

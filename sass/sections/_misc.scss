@@ -1,0 +1,20 @@
+/**
+ * @file
+ * This is the styling for miscellaneous items.
+ */
+
+ /**
+ * Common heading attributes
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include border-radius(8px);
+  @include rem(padding, 1rem 1rem .75rem 1rem);
+  background: $col2;
+  color: $col3;
+}

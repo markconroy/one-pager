@@ -4,23 +4,22 @@
  */
 
 #main {
-  &.outer {
-    background: $col1;
-  }
+  &.outer {}
   .inner {
-    background: $col1;
+    @extend %page-wrapper;
   }
-  .content {
-    padding: 0 10px;
-  }
-  .center {
-    margin: 0 auto;
-    max-width: 200px;
-  }
-  .label {
-    clear: left;
-    float: left;
-    line-height: 1.5;
-    width: 100px;
+  img {
+    @extend %transition;
+    box-sizing: border-box;
+    padding: 15px;
+    &.portfolio-img {
+      width: 100%;
+      @include breakpoint($small) {
+        width: 49%;
+      }
+      @include breakpoint($medium) {
+        width: 32.5%;
+      }
+    }
   }
 }

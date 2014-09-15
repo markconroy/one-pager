@@ -1,10 +1,9 @@
 <header class="outer">
   <div class="inner">
-    <?php include('nav.php'); ?>
     <div class="header-content">
-      <h1>Site Name</h1>
-      <div>This image is a logo placeholder:</div>
-      <a href=""><img src="http://lorempixel.com/200/100" /></a>
+      <h1 class="site-name">One Page Website</h1>
+      <a class= "logo" href=""><img src="http://lorempixel.com/g/300/100/" /></a>
+      <?php include('nav.php'); ?>
     </div>
   </div>
 </header>
