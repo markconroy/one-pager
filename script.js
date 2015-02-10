@@ -11,7 +11,7 @@ $( document ).ready(function() {
     $('.menu-control').addClass('menu-title-unclicked');
       // Toggle list on/off when title is clicked
     $('.menu-control').click(function() {
-    $('.menu-control').toggleClass('menu-title-clicked');
+    $('.menu-control').toggleClass('menu-title-clicked menu-title-unclicked');
     $('#nav ul').slideToggle();
     });
     $('.menu-control').hover(function() {
