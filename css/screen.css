@@ -430,7 +430,7 @@ input[type="reset"],
 input[type="submit"] {
   padding: 13px 21px;
   padding: 0.8rem 1.3rem;
-  background: white;
+  background: #fff;
   clear: both;
   color: #555457;
   display: block;
@@ -449,7 +449,7 @@ input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="submit"]:hover {
   background: #b1d356;
-  color: black;
+  color: #000;
 }
 
 /**
@@ -693,7 +693,7 @@ header #nav ul li a {
 }
 /* line 55, ../sass/sections/_header.scss */
 header #nav ul li a:focus, header #nav ul li a:hover {
-  color: white;
+  color: #fff;
 }
 @media (min-width: 520px) {
   /* line 26, ../sass/sections/_header.scss */
